@@ -14,7 +14,7 @@ bin: test
 	go build -o $(BIN_DIR)/$(EXECUTABLE)
 
 install: bin
-	cp $(BIN_DIR)/$(EXECUTABLE) $(INSTALL_DIR)/bin
+	cp $(BIN_DIR)/$(EXECUTABLE) $(INSTALL_DIR)/$(EXECUTABLE)
 
 clean:
 	rm -rf $(BIN_DIR)
